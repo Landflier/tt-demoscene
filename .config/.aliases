@@ -1,0 +1,2 @@
+alias magic-sky="magic -rcfile $PDK_ROOT/$PDK/libs.tech/magic/sky130A.magicrc"
+alias xschem-sky="xschem --rcfile $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc"
