@@ -31,7 +31,15 @@ Create a VGA demoscene project rendering video output, similar to TT08 demoscene
    - `pixel_generator.v` - Demo effect renderer
 
 2. TinyTapeout pinout:
-   - `uo_out[7:0]` - VGA signals: R[1:0], G[1:0], B[1:0], hsync, vsync
+   - `uo_out[7:0]` - VGA signals (Tiny VGA PMOD mapping):
+     - `uo_out[0]` R1 (Red MSB)
+     - `uo_out[1]` G1 (Green MSB)
+     - `uo_out[2]` B1 (Blue MSB)
+     - `uo_out[3]` VSYNC
+     - `uo_out[4]` R0 (Red LSB)
+     - `uo_out[5]` G0 (Green LSB)
+     - `uo_out[6]` B0 (Blue LSB)
+     - `uo_out[7]` HSYNC
    - `ui_in[7:0]` - Optional inputs
    - `uio[7:0]` - QSPI Pmod (directly active I/O):
      - `uio[0]` CS0 (Flash)
